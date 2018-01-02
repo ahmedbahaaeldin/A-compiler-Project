@@ -1,0 +1,27 @@
+Dol el 5 stoor 3ashan tcompile w run, tb3an awel sutr hat7ot el path elfeeh elfiles bt3tk
+
+D:
+D:\compilers
+bison -y -d calc3.y
+
+flex calc3.l
+
+gcc -c y.tab.c lex.yy.c
+gcc y.tab.o lex.yy.o calc3b.c -o calc3b.exe
+calc3b.exe
+| LBRACES {scopic ++;printf(scopic);}
+		| RBRACES {scopic --;}
+************
+MinGW install
+
+Nazelooh mn hna : https://sourceforge.net/projects/mingw/?source=typ_redirect
+
+awel mynzel e5taro el packages el gmbeeha C aw c++ , kano el 5 el fl nos bayen.
+
+**********
+system variables
+
+fl path variables bta3et el system htzwdo dol:
+
+1)C:\MinGW\bin
+2)path el folder el feeh el flex wl bison , ((( et2akedo en esmohom "flex.exe" w "bison.exe" bs msh "win_flex.exe" aw "win_bison.exe" , lw esmohom ghalat rename 3ady
